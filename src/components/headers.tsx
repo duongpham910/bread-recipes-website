@@ -1,6 +1,5 @@
 import Box from '@mui/material/Box';
-import Link from '@mui/material/Link';
-
+import ActiveLink from './active-link';
 
 export default function Header() {
   return (
@@ -19,21 +18,11 @@ export default function Header() {
           p: 4,
         }}
       >
-        <Link href="/shop" underline="none" color="inherit">
-          SHOP
-        </Link>
-        <Link href="/recipes" underline="none" color="inherit">
-          RECIPES
-        </Link>
-        <Link href="/learn" underline="none" color="inherit">
-          LEARN
-        </Link>
-        <Link href="/about" underline="none" color="inherit">
-          ABOUT
-        </Link>
-        <Link href="/blog" underline="none" color="inherit">
-          BLOG
-        </Link>
+        <ActiveLink href="/shop">SHOP</ActiveLink>
+        <ActiveLink href="/recipes">RECIPES</ActiveLink>
+        <ActiveLink href="/learn">LEARN</ActiveLink>
+        <ActiveLink href="/about">ABOUT</ActiveLink>
+        <ActiveLink href="/blog">BLOG</ActiveLink>
       </Box>
     </Box>
   );
